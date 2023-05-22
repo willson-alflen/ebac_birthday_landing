@@ -1,0 +1,39 @@
+#countdown {
+  text-align: center;
+  padding: 100px;
+
+  .countdown {
+    &__text {
+    }
+
+    &__timer {
+      font-size: 24px;
+
+      span {
+        padding: 5px;
+        background-color: #eee;
+        border-radius: 5px;
+
+        &.time {
+          display: inline-block;
+          margin: 0 10px;
+          font-weight: bold;
+
+          @keyframes highlight {
+            0% {
+              background-color: #e7845b;
+            }
+            100% {
+              background: #e7845b;
+            }
+          }
+
+          &.change {
+            animation-name: highlight;
+            animation-duration: 1s;
+          }
+        }
+      }
+    }
+  }
+}
